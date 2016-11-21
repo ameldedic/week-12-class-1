@@ -1,0 +1,3 @@
+<?php
+// This scriupt will collect data from HTML form and save it or send confirmation email...
+?>

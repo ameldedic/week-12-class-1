@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <form action="./scripts/handle-form.php" method="post">
+        <fieldset>
+            <legend>Get a Quote for your Website</legend>
+            <div class="text-inputs">
+                <div class="form-box">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" name="full-name" id="full-name" value="" placeholder="John Doe">
+                </div>
+                <div class="form-box">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" value="" placeholder="john@doe.com">
+                </div>
+                <div class="form-box">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="" placeholder="Password">
+                </div>
+            </div>
+            <div class="btn-inputs">
+                <div class="form-box">
+                    <input type="checkbox" name="cms" id="cms" value="yes"><label for="cms">Content Management System required</label>
+                </div>
+                <div class="form-box">
+                    <input type="checkbox" name="seo" id="seo" value="yes"><label for="seo">SEO required</label>
+                </div>
+                <div class="form-box">
+                    <input type="radio" name="graphics" id="graphics-1" value="client"><label for="seo">Graphics provided by client</label>
+                </div>
+                <div class="form-box">
+                    <input type="radio" name="graphics" id="graphics-2" value="developer"><label for="seo">Graphics provided by developer</label>
+                </div>
+                <div class="form-box">
+                    <select name="wb-type" id="wb-type">
+                        <option value="default">Select type of website</option>
+                        <option value="static">Static Website</option>
+                        <option value="dynamic">Dynamic Website</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-inputs">
+                <div class="form-box">
+                    <textarea name="additional-notes" id="additional-notes" cols="30" rows="10" placeholder="Type additional requests"></textarea>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <input type="submit" name="send-data" id="send-data" value="SUBMIT QUERY">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
